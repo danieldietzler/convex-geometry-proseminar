@@ -1,5 +1,5 @@
 <template>
-  <div class="slidev-layout layout">
+  <div class="slidev-layout layout flex flex-col">
     <slot />
   </div>
   <footer

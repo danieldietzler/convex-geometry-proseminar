@@ -21,16 +21,14 @@ Separation Theorems
 
 Daniel Dietzler
 
----
-
-# Table of contents
-
-<Toc minDepth="1" maxDepth="2"></Toc>
 
 ---
-src: ./pages/fundamentals.md
+src: ./pages/intro.md
 ---
 
+---
+src: ./pages/separation_theorem.md
+---
 
 ---
 layout: center

@@ -4,7 +4,7 @@
 
 <template>
 	<div class="p-4 shadow-lg">
-		<h3 class="underline">Corollary {{ number }}</h3>
+		<h3 class="underline">Corollary {{ label }}</h3>
 		<slot/>
 	</div>
 </template>
