@@ -31,6 +31,10 @@ src: ./pages/separation_theorem.md
 ---
 
 ---
+src: ./pages/polytopes.md
+---
+
+---
 layout: center
 class: text-center
 ---
