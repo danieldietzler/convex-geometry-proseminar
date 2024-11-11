@@ -176,3 +176,95 @@ $\square$
 Every polytope $P \subset \mathbb{R}^n$ is a polyhedral set.
 
 </Theorem>
+
+<Definition label="1.5 — Reminder" class="mt-14">
+
+- (a) The intersection of finitely many closed halfspaces is called a *polyhedral set*
+- (b) The convex hull of finitely many points $x_1, ..., x_k \in \mathbb{R}^n$ is called a (convex) *polytope*
+</Definition>
+
+---
+
+# k-Support Sets
+Proof
+
+<div class="w-58% place-self-end -mt-24 -mr-6">
+<Theorem label="1.20">
+
+Every polytope $P \subset \mathbb{R}^n$ is a polyhedral set.
+
+</Theorem>
+</div>
+
+<div>
+
+We split the cases $\dim P = k < n$ and $\dim P = n$ up.
+
+
+</div>
+
+---
+
+# k-Support Sets
+Proof: $\dim P = k < n$
+
+<div class="w-58% place-self-end -mt-24 -mr-6">
+<Theorem label="1.20">
+
+Every polytope $P \subset \mathbb{R}^n$ is a polyhedral set.
+
+</Theorem>
+</div>
+
+<div>
+
+Let $E := \text{aff } P$.
+Then, $E = \bigcap_{j = 1}^r \tilde{H}_j$ with $r = 2(d - k)$, $\tilde{H}_i$ halfspaces in $\mathbb{R}^n$. \
+Suppose $P$ is polyhedral in $E$: 
+
+$$
+P = \bigcap_{i = 1}^m H_i
+$$
+for $H_i \subset E$ $k$-dimensional halfspaces.
+
+$$
+P = \bigcap_{i = 1}^m (H_i \oplus E^\perp) \cap E = \bigcap_{i = 1}^m (H_i \oplus E^\perp) \cap \bigcap_{j = 1}^r \tilde{H}_j
+$$
+
+$\implies P$ is a polyhedral set in $\mathbb{R}^n$.
+
+</div>
+
+<!--
+E^\perp := linear subspace orthogonal to the linear subspace which spans E
+-->
+
+---
+
+# k-Support Sets
+Proof: $\dim P = n$
+
+<div class="w-58% place-self-end -mt-24 -mr-6">
+<Theorem label="1.20">
+
+Every polytope $P \subset \mathbb{R}^n$ is a polyhedral set.
+
+</Theorem>
+</div>
+
+<div>
+
+Let $F_1, ..., F_m$ be the support sets of $P$, $H_1, ..., H_m$ corresponding supporting halfspaces. \
+So: $P \subset H_i$ and $F_i = P \cap \text{bd } H_i$ ($i = 1, ..., m$). Then,
+
+$$
+P \subset H_1 \cap ... \cap H_m =: P'
+$$
+
+</div>
+
+<!--
+bd == boundary; Rand
+
+\subset weil P \subset H_i
+-->

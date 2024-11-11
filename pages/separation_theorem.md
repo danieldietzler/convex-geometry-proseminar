@@ -14,6 +14,29 @@ iff. $A$ and $B$ can be properly separated.
 ---
 
 # Separation Theorem
+
+<div class="flex justify-center items-center h-full">
+	<img src="/convex_no_labels.svg" class="h-100"/>
+	<div class="h-full w-0.5 bg-black/30 rounded-full -mx-8.5" />
+	<img src="/convex_no_labels.svg" class="h-100"/>
+</div>
+
+---
+
+# Separation Theorem
+
+<div class="flex justify-center items-center h-full">
+	<img src="/convex_no_labels.svg" class="h-100"/>
+	<div class="h-full w-0.5 bg-black/30 rounded-full -mx-18" />
+	<img src="/convex_no_labels.svg" class="h-100"/>
+</div>
+
+<div v-click class="h-100 w-0.5 bg-black/30 rounded-full absolute top-12 left-120 rotate-45" />
+<div v-click class="h-100 w-0.5 bg-black/30 rounded-full absolute top-45 left-130 -rotate-70" />
+
+---
+
+# Separation Theorem
 Proof: "$\Rightarrow$"
 
 <div class="w-58% place-self-end -mt-24 -mr-6">
@@ -113,7 +136,7 @@ Moreover, the halfspace $H$ bounded by $E$ and not containing $x$ is a supportin
 <Theorem v-click="4" label="1.16 (Support Theorem)" class="w-full">
 
 Let $A \subset \mathbb{R}^n$ be closed and convex. 
-Then through each boundary point of $A$ there is exists a supporting hyperplane.
+Then through each boundary point of $A$ there exists a supporting hyperplane.
 
 </Theorem>
 </div>
@@ -160,7 +183,7 @@ f(a) \leq f(b), 'cause A - B \subset {f \leq 0}
 ---
 
 # Separation Theorem
-Proof: "$\Leftarrow$", by contradiction
+Proof: "$\Leftarrow$"<v-click at="1">, contraposition </v-click>
 
 <div class="w-58% place-self-end -mt-24 -mr-6">
 <Theorem label="1.17 (Separation Theorem)">
@@ -174,7 +197,27 @@ iff. $A$ and $B$ can be properly separated.
 
 </Theorem>
 </div>
-<div class="-mt-20">
+<div class="-mt-28">
+
+<v-switch>
+
+<template #0>
+
+$A$ and $B$ can<v-click at=2>not</v-click> be properly separated $\implies$ \
+$\text{relint} A \cap \text{relint} B = \emptyset$ 
+</template>
+
+<template #1-3>
+
+$A$ and $B$ can**not** be properly separated $\Longleftarrow$ \
+$\text{relint} A \cap \text{relint} B \neq \emptyset$ 
+</template>
+
+</v-switch>
+
+</div>
+
+<div v-click="2" class="mt-8">
 
 Suppose $E$ is a separating hyperplane for \
 $A$ and $B$, $x_0 \in \text{relint}A \cap \text{relint} B$. 
@@ -185,7 +228,7 @@ Hence, $E$ does not properly separate $A$ and $B$.
 
 </div>
 
-<div class="self-end m-6 mt-28">
+<div v-click="2" class="self-end m-6 mt-6">
 
 $\square$
 </div>
@@ -221,6 +264,16 @@ $\square$
 </div>
 </v-click>
 
+---
+
+# Strong Separation
+
+<div class="flex justify-center items-center h-full">
+	<img src="/convex_no_labels.svg" class="h-100"/>
+	<div class="h-100 w-0.5 bg-black rounded-full outline outline-16 outline-lime-400/40 -mx-4" />
+	<img src="/convex_no_labels.svg" class="h-100"/>
+</div>
+
 --- 
 
 # Other Remarkable Results
@@ -247,22 +300,29 @@ Then $A$ is convex.
 <v-switch>
 <template #0 >
 	<div class="flex justify-evenly items-center h-full" >
-		<img src="/non-convex_no_labels.svg" class="h-100" />
 		<img src="/convex_no_labels.svg" class="h-100"/>
+		<img src="/non-convex_no_labels.svg" class="h-100" />
 	</div>
 </template>
 
 <template #1>
 	<div class="flex justify-evenly items-center h-full" >
-		<img src="/non-convex_labels.svg" class="h-100" />
-		<img src="/convex_no_labels.svg" class="h-100"/>
+		<img src="/convex_point.svg" class="h-100"/>
+		<img src="/non-convex_point.svg" class="h-100" />
 	</div>
 </template>
 
 <template #2>
 	<div class="flex justify-evenly items-center h-full" >
-		<img src="/non-convex_labels.svg" class="h-100" />
 		<img src="/convex_labels.svg" class="h-100"/>
+		<img src="/non-convex_point.svg" class="h-100" />
+	</div>
+</template>
+
+<template #3>
+	<div class="flex justify-evenly items-center h-full" >
+		<img src="/convex_labels.svg" class="h-100"/>
+		<img src="/non-convex_labels.svg" class="h-100" />
 	</div>
 </template>
 </v-switch>

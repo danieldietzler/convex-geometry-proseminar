@@ -1,5 +1,5 @@
 
-<div class="flex h-full flex-around justify-evenly items-center">
+<div class="flex h-full justify-evenly items-center">
 
   $A \subset \mathbb{R}^2$
 
