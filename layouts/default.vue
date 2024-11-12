@@ -4,8 +4,9 @@
   </div>
   <footer
     v-if="$slidev.nav.currentLayout !== 'cover'"
-    class="absolute bottom-0 right-0 m-6 mr-10"
+    class="absolute flex bottom-0 w-full m-4 justify-between pr-10"
   >
-    {{ $slidev.nav.currentPage }}/{{ $slidev.nav.total }}
+    <div>Daniel Dietzler</div>
+    <div>{{ $slidev.nav.currentPage }}/{{ $slidev.nav.total }}</div>
   </footer>
 </template>

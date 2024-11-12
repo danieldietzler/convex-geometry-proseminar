@@ -261,6 +261,44 @@ $$
 P \subset H_1 \cap ... \cap H_m =: P'
 $$
 
+Now, we show that $P = P'$.
+
+</div>
+
+<!--
+bd == boundary; Rand
+
+\subset weil P \subset H_i
+-->
+
+---
+
+# k-Support Sets
+Proof: $\dim P = n$
+
+<div class="w-58% place-self-end -mt-24 -mr-6">
+<Theorem label="1.20">
+
+Every polytope $P \subset \mathbb{R}^n$ is a polyhedral set.
+
+</Theorem>
+</div>
+
+<div>
+
+Assume there ex. a $x \in P'\backslash P$. 
+For $y \in \text{int } P$ we consider $[y, x] \cap P$. \
+P is compact, convex, and $x \notin P$, thus ex. a $z \in (y, x)$ with $\{z\} = [y, x] \cap \text{bd } P$. \
+$\overset{\text{Support Thm.}}\implies$ supporting hyperplane of $P$ through $z$.
+Thus, we conclude the existence of a support set $F_i$ of $P$ with $z \in F_i \subset \text{bd } H_i$. \
+Also, $y \in \text{int } H_i, x \in P' \subset H_i$ and $z \in (y, x)$ imply that we have a $z \in \text{int } H_i$. Contradiction.
+
+
+</div>
+
+<div class="self-end mt-18 m-6">
+
+$\square$
 </div>
 
 <!--
