@@ -17,7 +17,7 @@ overviewSnapshots: true
 
 # Convex Geometry
 
-Separation Theorems & Applications
+Supporting Theorems II & Separation Theorems
 
 Daniel Dietzler
 

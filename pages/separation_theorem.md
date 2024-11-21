@@ -4,9 +4,11 @@
 
 Let $A, B \subset \mathbb{R}^n$ be nonempty and convex sets in $\mathbb{R}^n$.
 Then
+
 $$
 \text{relint} A \cap \text{relint} B = \emptyset
 $$
+
 iff. $A$ and $B$ can be properly separated.
 
 </Theorem>
@@ -37,6 +39,7 @@ iff. $A$ and $B$ can be properly separated.
 ---
 
 # Separation Theorem
+
 Proof: "$\Rightarrow$"
 
 <div class="w-58% place-self-end -mt-24 -mr-6">
@@ -44,9 +47,11 @@ Proof: "$\Rightarrow$"
 
 Let $A, B \subset \mathbb{R}^n$ be nonempty and convex sets in $\mathbb{R}^n$.
 Then
+
 $$
 \text{relint} A \cap \text{relint} B = \emptyset
 $$
+
 iff. $A$ and $B$ can be properly separated.
 
 </Theorem>
@@ -54,18 +59,19 @@ iff. $A$ and $B$ can be properly separated.
 <div class="-mt-20">
 
 Suppose $\text{relint} A \cap \text{relint} B = \emptyset$. \
-Then, $\text{relint} A - \text{relint} B \not \owns 0$ follows. (*) \
+Then, $\text{relint} A - \text{relint} B \not \owns 0$ follows. (\*) \
 $\overset{\text{Ex 1.3.3 (a)}}{\implies} 0 \notin \text{relint}(A - B)$
 
 </div>
 
 <div v-click class="mt-16">
 
-(*) Let $P := \text{relint} A, Q := \text{relint} B$. $P - Q = \{p - q : p \in P, \; q \in Q\}$. \
+(\*) Let $P := \text{relint} A, Q := \text{relint} B$. $P - Q = \{p - q : p \in P, \; q \in Q\}$. \
 Thus, clearly $0 \in P - Q \iff \exists p \in P, q \in Q: p = q$, so $P \cap Q \neq \emptyset$.
+
 </div>
 
-<!-- 
+<!--
 Exercise 1.3.3 (a): relint(A + B) = relint A + relint B
 
 => no identical points in the interior
@@ -74,6 +80,7 @@ Exercise 1.3.3 (a): relint(A + B) = relint A + relint B
 ---
 
 # Separation Theorem
+
 Proof: "$\Rightarrow$"
 
 <div class="w-58% place-self-end -mt-24 -mr-6">
@@ -81,9 +88,11 @@ Proof: "$\Rightarrow$"
 
 Let $A, B \subset \mathbb{R}^n$ be nonempty and convex sets in $\mathbb{R}^n$.
 Then
+
 $$
 \text{relint} A \cap \text{relint} B = \emptyset
 $$
+
 iff. $A$ and $B$ can be properly separated.
 
 </Theorem>
@@ -91,7 +100,7 @@ iff. $A$ and $B$ can be properly separated.
 <div class="-mt-20">
 
 Prerequisite: $\text{cl}(A - B)$ is nonempty, closed \
-and convex. 
+and convex.
 
 Obviously, the closure of a set is closed. \
 Furthermore, we know by definition that $A - B = \emptyset$ iff. $A$ or $B$ empty. \
@@ -99,8 +108,7 @@ Lastly, the convexity of $A - B$ immediately follows from the convexity of $A$ a
 
 </div>
 
-
-<!-- 
+<!--
 Nonempty: A - B = {a - b: a in A, b in B} never empty when A and B have elements
 
 Convexity A - B: Remark 1.4, just write it down
@@ -123,6 +131,7 @@ $0 \notin \text{cl}(A - B)$
 
 $0 \in \text{cl}(A - B)$
 </v-click>
+
 </div>
 <div class="flex gap-2 ">
 <Theorem v-click="2" label="1.14" class="w-full">
@@ -135,7 +144,7 @@ Moreover, the halfspace $H$ bounded by $E$ and not containing $x$ is a supportin
 
 <Theorem v-click="4" label="1.16 (Support Theorem)" class="w-full">
 
-Let $A \subset \mathbb{R}^n$ be closed and convex. 
+Let $A \subset \mathbb{R}^n$ be closed and convex.
 Then through each boundary point of $A$ there exists a supporting hyperplane.
 
 </Theorem>
@@ -145,11 +154,13 @@ Then through each boundary point of $A$ there exists a supporting hyperplane.
 
 $E = \{f = 0\}$ through 0, $A - B \subset \{f \leq 0\}$
 </v-click>
+
 </div>
 
 ---
 
 # Separation Theorem
+
 Proof: "$\Rightarrow$"
 
 <div class="w-58% place-self-end -mt-24 -mr-6">
@@ -157,9 +168,11 @@ Proof: "$\Rightarrow$"
 
 Let $A, B \subset \mathbb{R}^n$ be nonempty and convex sets in $\mathbb{R}^n$.
 Then
+
 $$
 \text{relint} A \cap \text{relint} B = \emptyset
 $$
+
 iff. $A$ and $B$ can be properly separated.
 
 </Theorem>
@@ -167,6 +180,7 @@ iff. $A$ and $B$ can be properly separated.
 <div class="-mt-30">
 
 We have:
+
 - $\text{cl}(A - B)$ nonempty, closed, convex
 - $E = \{f = 0\}$, $A - B \subset \{f \leq 0\}$
 
@@ -176,13 +190,14 @@ We conclude $f(b) \geq \alpha, b \in B \implies B \subset \{f \geq \alpha\}$.
 
 </div>
 
-<!-- 
+<!--
 f(a) \leq f(b), 'cause A - B \subset {f \leq 0}
 -->
 
 ---
 
 # Separation Theorem
+
 Proof: "$\Leftarrow$"<v-click at="1">, contraposition </v-click>
 
 <div class="w-58% place-self-end -mt-24 -mr-6">
@@ -190,9 +205,11 @@ Proof: "$\Leftarrow$"<v-click at="1">, contraposition </v-click>
 
 Let $A, B \subset \mathbb{R}^n$ be nonempty and convex sets in $\mathbb{R}^n$.
 Then
+
 $$
 \text{relint} A \cap \text{relint} B = \emptyset
 $$
+
 iff. $A$ and $B$ can be properly separated.
 
 </Theorem>
@@ -204,13 +221,13 @@ iff. $A$ and $B$ can be properly separated.
 <template #0>
 
 $A$ and $B$ can<v-click at=2>not</v-click> be properly separated $\implies$ \
-$\text{relint} A \cap \text{relint} B = \emptyset$ 
+$\text{relint} A \cap \text{relint} B = \emptyset$
 </template>
 
 <template #1-3>
 
 $A$ and $B$ can**not** be properly separated $\Longleftarrow$ \
-$\text{relint} A \cap \text{relint} B \neq \emptyset$ 
+$\text{relint} A \cap \text{relint} B \neq \emptyset$
 </template>
 
 </v-switch>
@@ -220,24 +237,24 @@ $\text{relint} A \cap \text{relint} B \neq \emptyset$
 <div v-click="2" class="mt-8">
 
 Suppose $E$ is a separating hyperplane for \
-$A$ and $B$, $x_0 \in \text{relint}A \cap \text{relint} B$. 
+$A$ and $B$, $x_0 \in \text{relint}A \cap \text{relint} B$.
 
 Then, $x_0 \in E$, thus $A, B \subset E$. \
-Hence, $E$ does not properly separate $A$ and $B$. 
-
+Hence, $E$ does not properly separate $A$ and $B$.
 
 </div>
 
 <div v-click="2" class="self-end m-6 mt-6">
 
 $\square$
+
 </div>
 
-<!-- 
+<!--
 f(a) \leq f(b), 'cause A - B \subset {f \leq 0}
 -->
 
---- 
+---
 
 # Separation Theorem Results
 
@@ -245,14 +262,16 @@ f(a) \leq f(b), 'cause A - B \subset {f \leq 0}
 
 Let $A, B \subset \mathbb{R}^n$ be convex, $A$ closed, $B$ compact, and assume that $A \cap B = \emptyset$.
 Then there is a hyperplane $\{f = \gamma\}$ and an $\varepsilon > 0$ such that $A \subset \{f \geq \gamma + \varepsilon\}$ and $B \subset \{f \leq \gamma - \varepsilon\}$. \
-In this case, we say that $A$ and $B$ are *strongly separated* by the hyperplane $\{f = \gamma\}$.
+In this case, we say that $A$ and $B$ are _strongly separated_ by the hyperplane $\{f = \gamma\}$.
 
 </Remark>
 
 <v-click>
 
 ### Proof
+
 Looking at the proof of Theorem 1.17 again, we now get strict inequalities:
+
 - $f(a) < f(b)\forall a \in A, b \in B$, $\quad \underset{a \in A}{\sup} f(a) < f(b) < \infty \forall b \in B$
 - $A \subset \{f < \alpha\}$, $B \subset \{f > \alpha\}$
 
@@ -261,6 +280,7 @@ Thus, we get the $\varepsilon$-neighborhood of $E$.
 <div class="self-end -mt-14 m-8">
 
 $\square$
+
 </div>
 </v-click>
 
@@ -274,7 +294,7 @@ $\square$
 	<img src="/convex_no_labels.svg" class="h-100"/>
 </div>
 
---- 
+---
 
 # Other Remarkable Results
 
@@ -287,11 +307,15 @@ $A$ is convex iff. every boundary point of $A$ is a support point.
 
 <Remark label="1.19.ii (Motzkin's Theorem)" class="mb-4">
 
-Let $A \subset \mathbb{R}^n$ be closed. 
+Let $A \subset \mathbb{R}^n$ be closed.
 Suppose that for each $x \in \mathbb{R}^n$ there is a unique point $p(A, x) \in A$ such that $\Vert x - p(A, x) \Vert = \min \{\Vert x - y \vert : y \in A \}$.
 Then $A$ is convex.
 
 </Remark>
+
+<!-- 
+1.19.i war eine Frage iirc
+-->
 
 ---
 
@@ -306,23 +330,26 @@ Then $A$ is convex.
 </template>
 
 <template #1>
-	<div class="flex justify-evenly items-center h-full" >
-		<img src="/convex_point.svg" class="h-100"/>
-		<img src="/non-convex_point.svg" class="h-100" />
-	</div>
+
+<div class="flex justify-evenly items-center h-full" >
+<img src="/convex_point.svg" class="h-100"/>
+<img src="/non-convex_point.svg" class="h-100" />
+</div>
 </template>
 
 <template #2>
-	<div class="flex justify-evenly items-center h-full" >
-		<img src="/convex_labels.svg" class="h-100"/>
-		<img src="/non-convex_point.svg" class="h-100" />
-	</div>
+
+<div class="flex justify-evenly items-center h-full" >
+<img src="/convex_labels.svg" class="h-100"/>
+<img src="/non-convex_point.svg" class="h-100" />
+</div>
 </template>
 
 <template #3>
-	<div class="flex justify-evenly items-center h-full" >
-		<img src="/convex_labels.svg" class="h-100"/>
-		<img src="/non-convex_labels.svg" class="h-100" />
-	</div>
+
+<div class="flex justify-evenly items-center h-full" >
+<img src="/convex_labels.svg" class="h-100"/>
+<img src="/non-convex_labels.svg" class="h-100" />
+</div>
 </template>
 </v-switch>

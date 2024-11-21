@@ -1,15 +1,14 @@
-
 <div class="flex h-full justify-evenly items-center">
 
-  $A \subset \mathbb{R}^2$
+$A \subset \mathbb{R}^2$
 
   <div class="h-full w-0.5 bg-black/30 rounded-full" />
 
-  $B \subset \mathbb{R}^2$
+$B \subset \mathbb{R}^2$
 
 </div>
 
---- 
+---
 
 # Fundamentals
 
@@ -26,3 +25,18 @@ if there exists a separating hyperplane which does not contain both $A$ and $B$.
 
 - Reminder: $A$ convex. $\text{relint} A = \{x \in \mathbb{R}^n : \forall y \in \text{aff}(A) \backslash \{x\} \; \exists z \in A \text{ with } x \in (z, y)\}$
 </div>
+
+---
+
+# Proper Separation
+
+<!-- 
+\draw[black, thick] (1, 1) -- (2, 2) node[midway, below right]{A};
+\draw[black, thick] (3, 3) -- (4, 4) node[midway, above left]{B};
+\draw[gray, thin] (0, 0) -- (5, 5) node[below right=.1cm,color=gray]{E};
+\filldraw[black] (1, 1) circle (2pt);
+\filldraw[black] (2, 2) circle (2pt);
+\filldraw[black] (3, 3) circle (2pt);
+\filldraw[black] (4, 4) circle (2pt);
+ -->
+<img src="/non-properly-separated.svg" class="h-80"/>
