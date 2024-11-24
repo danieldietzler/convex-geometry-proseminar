@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     85516,       1700]
-NotebookOptionsPosition[     84249,       1671]
-NotebookOutlinePosition[     84684,       1688]
-CellTagsIndexPosition[     84641,       1685]
+NotebookDataLength[     97127,       1970]
+NotebookOptionsPosition[     94983,       1927]
+NotebookOutlinePosition[     95418,       1944]
+CellTagsIndexPosition[     95375,       1941]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1667,6 +1667,262 @@ sNN1JctZQTG7w8/u3iid9l6t4yFfnB/pHX7y1HmPXuCaXRj5/58fB/KsbgU=
    3.940143351012875*^9}, 3.940143416310563*^9, {3.940143476830237*^9, 
    3.9401436524445267`*^9}, {3.940143688753808*^9, 3.940143796759397*^9}},
  CellLabel->"Out[83]=",ExpressionUUID->"c92276e2-cd21-4a0a-a78e-086e2b899f94"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"Blue", ",", " ", 
+     RowBox[{"Opacity", "[", "0.3", "]"}], ",", " ", 
+     RowBox[{"Cube", "[", "2", "]"}], ",", " ", "Gray", ",", " ", 
+     RowBox[{"Opacity", "[", ".7", "]"}], ",", "  ", 
+     RowBox[{"InfinitePlane", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", " ", 
+          RowBox[{"-", "1"}], ",", " ", 
+          RowBox[{"-", "1"}]}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", " ", 
+          RowBox[{"-", "1"}], ",", " ", "1"}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", " ", "1", ",", " ", "1"}], "}"}]}], "}"}], "]"}]}],
+     "}"}], ",", " ", 
+   RowBox[{"PlotRange", " ", "->", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "2"}], ",", " ", "2"}], "}"}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "2"}], ",", " ", "2"}], "}"}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "2"}], ",", " ", "2"}], "}"}]}], "}"}]}], ",", " ", 
+   RowBox[{"Boxed", "->", " ", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9414400922535763`*^9, 3.941440114692958*^9}, {
+  3.941440176283066*^9, 3.9414403882380733`*^9}, {3.941440428482027*^9, 
+  3.941440701154311*^9}, {3.941440742724943*^9, 3.941440760887556*^9}, {
+  3.94144079450883*^9, 3.941440804533044*^9}, {3.941440911328147*^9, 
+  3.941440958484782*^9}, {3.941441428349535*^9, 3.9414414407299337`*^9}, {
+  3.94144147109341*^9, 3.941441484660839*^9}, {3.941441527779071*^9, 
+  3.941441531658413*^9}},ExpressionUUID->"14a4494c-4203-47c5-8ac9-\
+b23ac15a0a80"],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   {RGBColor[0, 0, 1], Opacity[0.3], 
+    InterpretationBox[
+     PolyhedronBox[{{-1, 1, -1}, {1, 1, -1}, {1, -1, -1}, {-1, -1, -1}, {-1, 
+      1, 1}, {1, 1, 1}, {1, -1, 1}, {-1, -1, 1}}, {{1, 2, 3, 4}, {5, 6, 2, 
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+     Cube[2]]}, 
+   {GrayLevel[0.5], Opacity[0.7], 
+    TagBox[ConicHullRegion3DBox[{{1, -1, -1}, {1, -1, 1}, {1, 1, 1}}],
+     "InfinitePlane"]}},
+  Boxed->False,
+  ImageSize->{328.66068768439686`, 360.84593436682235`},
+  ImageSizeRaw->Automatic,
+  PlotRange->{{-2, 2}, {-2, 2}, {-2, 2}},
+  ViewPoint->{0.9549259545409094, -2.925946560524457, 1.4060416588064677`},
+  ViewVertical->{0.019761855235714068`, -0.20705725641813097`, 
+   0.9781292152073975}]], "Output",
+ CellChangeTimes->{{3.941440103396729*^9, 3.941440116147883*^9}, {
+   3.941440183137648*^9, 3.941440290805994*^9}, {3.941440363129612*^9, 
+   3.941440389560459*^9}, {3.941440445402115*^9, 3.941440454754181*^9}, {
+   3.9414404858683357`*^9, 3.9414405195543003`*^9}, {3.941440582484694*^9, 
+   3.941440603947241*^9}, {3.941440693564301*^9, 3.941440702323254*^9}, {
+   3.941440746827209*^9, 3.9414407644532843`*^9}, {3.941440891908251*^9, 
+   3.941440959657071*^9}, 3.941441435145875*^9, 3.941441485530143*^9, 
+   3.941441529039102*^9},
+ CellLabel->"Out[48]=",ExpressionUUID->"69fdecae-b17d-4ebf-a9df-fa297dd1c08d"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.941440983594795*^9, 3.941441108002281*^9}, 
+   3.941441395780201*^9},ExpressionUUID->"12ede2eb-f395-4fab-9cc4-\
+5bc13b3b018b"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.941441402447711*^9, 
+  3.941441402451686*^9}},ExpressionUUID->"fb9931fc-4c14-499c-b1d8-\
+3a8f32b31401"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"Blue", ",", " ", 
+     RowBox[{"Opacity", "[", "0.3", "]"}], ",", " ", 
+     RowBox[{"Cube", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", " ", "45"}], "}"}], ",", " ", "2"}], "]"}], ",", 
+     " ", "Gray", ",", " ", 
+     RowBox[{"Opacity", "[", ".7", "]"}], ",", "  ", 
+     RowBox[{"InfinitePlane", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1.36", ",", " ", 
+          RowBox[{"-", "1"}], ",", " ", 
+          RowBox[{"-", "1"}]}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"1.36", ",", " ", 
+          RowBox[{"-", "1"}], ",", " ", "1"}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"1.36", ",", " ", "1", ",", " ", "1"}], "}"}]}], "}"}], 
+      "]"}]}], "}"}], ",", " ", 
+   RowBox[{"PlotRange", " ", "->", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "2"}], ",", " ", "2"}], "}"}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "2"}], ",", " ", "2"}], "}"}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "2"}], ",", " ", "2"}], "}"}]}], "}"}]}], ",", " ", 
+   RowBox[{"Boxed", " ", "->", " ", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.941441489462027*^9, 3.941441620692095*^9}, {
+  3.94144165613024*^9, 3.941441673485866*^9}},
+ CellLabel->"In[56]:=",ExpressionUUID->"f49fd44c-ad52-4ee5-a81d-6dd067966888"],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   {RGBColor[0, 0, 1], Opacity[0.3], 
+    InterpretationBox[
+     PolyhedronBox[
+      NCache[{{-Cos[45] - Sin[45], 1, -Cos[45] + Sin[45]}, {
+        Cos[45] - Sin[45], 1, -Cos[45] - Sin[45]}, {
+        Cos[45] - Sin[45], -1, -Cos[45] - Sin[45]}, {-Cos[45] - Sin[
+         45], -1, -Cos[45] + Sin[45]}, {-Cos[45] + Sin[45], 1, Cos[45] + 
+         Sin[45]}, {Cos[45] + Sin[45], 1, Cos[45] - Sin[45]}, {
+        Cos[45] + Sin[45], -1, Cos[45] - Sin[45]}, {-Cos[45] + Sin[45], -1, 
+         Cos[45] + Sin[45]}}, {{-1.3762255133518482`, 1, 
+         0.3255815357163887}, {-0.3255815357163887, 
+         1, -1.3762255133518482`}, {-0.3255815357163887, -1, \
+-1.3762255133518482`}, {-1.3762255133518482`, -1, 0.3255815357163887}, {
+        0.3255815357163887, 1, 1.3762255133518482`}, {
+        1.3762255133518482`, 1, -0.3255815357163887}, {
+        1.3762255133518482`, -1, -0.3255815357163887}, {
+        0.3255815357163887, -1, 1.3762255133518482`}}], {{1, 2, 3, 4}, {5, 6, 
+      2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+     Cube[{0, 45}, 2]]}, 
+   {GrayLevel[0.5], Opacity[0.7], 
+    TagBox[ConicHullRegion3DBox[{{1.36, -1, -1}, {1.36, -1, 1}, {1.36, 1, 1}}],
+     "InfinitePlane"]}},
+  Boxed->False,
+  ImageSize->{342.5327470390795, 318.09578732736446`},
+  ImageSizeRaw->Automatic,
+  PlotRange->{{-2, 2}, {-2, 2}, {-2, 2}},
+  ViewPoint->{1.444731434138561, -3.031439966910418, 0.41608029300855204`},
+  ViewVertical->{0.4866283066562232, -0.3160484664653722, 
+   0.8144361595642616}]], "Output",
+ CellChangeTimes->{
+  3.941441406777753*^9, {3.941441494073139*^9, 3.941441622323608*^9}, {
+   3.941441661418089*^9, 3.9414416772721367`*^9}},
+ CellLabel->"Out[56]=",ExpressionUUID->"cce24440-f613-496f-9dce-5e68c73efaca"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"Blue", ",", " ", 
+     RowBox[{"Opacity", "[", "0.3", "]"}], ",", " ", 
+     RowBox[{"Cube", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"45", ",", " ", "45"}], "}"}], ",", " ", "2"}], "]"}], ",", 
+     " ", "Gray", ",", " ", 
+     RowBox[{"Opacity", "[", ".7", "]"}], ",", "  ", 
+     RowBox[{"InfinitePlane", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1.55", ",", " ", 
+          RowBox[{"-", "1"}], ",", " ", 
+          RowBox[{"-", "1"}]}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"1.55", ",", " ", 
+          RowBox[{"-", "1"}], ",", " ", "1"}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"1.55", ",", " ", "1", ",", " ", "1"}], "}"}]}], "}"}], 
+      "]"}]}], "}"}], ",", " ", 
+   RowBox[{"PlotRange", " ", "->", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "2"}], ",", " ", "2"}], "}"}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "2"}], ",", " ", "2"}], "}"}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "2"}], ",", " ", "2"}], "}"}]}], "}"}]}], ",", " ", 
+   RowBox[{"Boxed", " ", "->", " ", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.941441695524097*^9, 3.941441748172764*^9}, {
+  3.94144178070778*^9, 3.941441800335017*^9}},
+ CellLabel->"In[62]:=",ExpressionUUID->"24c14dfe-2a73-420e-ae05-17be45a5b1ab"],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   {RGBColor[0, 0, 1], Opacity[0.3], 
+    InterpretationBox[
+     PolyhedronBox[
+      NCache[{{-Cos[45]^2 - Sin[45] - Cos[45] Sin[45], Cos[45] - Sin[
+         45], -Cos[45] + Cos[45] Sin[45] + Sin[45]^2}, {
+        Cos[45]^2 - Sin[45] - Cos[45] Sin[45], Cos[45] + Sin[45], -Cos[45] - 
+         Cos[45] Sin[45] + Sin[45]^2}, {
+        Cos[45]^2 - Sin[45] + Cos[45] Sin[45], -Cos[45] + Sin[45], -Cos[45] - 
+         Cos[45] Sin[45] - Sin[45]^2}, {-Cos[45]^2 - Sin[45] + 
+         Cos[45] Sin[45], -Cos[45] - Sin[45], -Cos[45] + Cos[45] Sin[45] - 
+         Sin[45]^2}, {-Cos[45]^2 + Sin[45] - Cos[45] Sin[45], Cos[45] - Sin[
+         45], Cos[45] + Cos[45] Sin[45] + Sin[45]^2}, {
+        Cos[45]^2 + Sin[45] - Cos[45] Sin[45], Cos[45] + Sin[45], Cos[45] - 
+         Cos[45] Sin[45] + Sin[45]^2}, {
+        Cos[45]^2 + Sin[45] + Cos[45] Sin[45], -Cos[45] + Sin[45], Cos[45] - 
+         Cos[45] Sin[45] - Sin[45]^2}, {-Cos[45]^2 + Sin[45] + 
+         Cos[45] Sin[45], -Cos[45] - Sin[45], Cos[45] + Cos[45] Sin[45] - 
+         Sin[45]^2}}, {{-1.5738650482698124`, -0.3255815357163887, 
+       0.6457131510471343}, {-1.0219386643989825`, 
+       1.3762255133518482`, -0.2482835125534235}, {-0.1279420007984245, 
+       0.3255815357163887, -1.6963571286825938`}, {-0.6798683846692544, \
+-1.3762255133518482`, -0.802360465082036}, {
+       0.1279420007984245, -0.3255815357163887, 1.6963571286825938`}, {
+       0.6798683846692544, 1.3762255133518482`, 0.802360465082036}, {
+       1.5738650482698124`, 0.3255815357163887, -0.6457131510471343}, {
+       1.0219386643989825`, -1.3762255133518482`, 0.2482835125534235}}], {{1, 
+      2, 3, 4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7,
+       6, 5}}],
+     Cube[{45, 45}, 2]]}, 
+   {GrayLevel[0.5], Opacity[0.7], 
+    TagBox[ConicHullRegion3DBox[{{1.55, -1, -1}, {1.55, -1, 1}, {1.55, 1, 1}}],
+     "InfinitePlane"]}},
+  Boxed->False,
+  ImageSize->{354.6222450759959, 353.99599022007004`},
+  ImageSizeRaw->Automatic,
+  PlotRange->{{-2, 2}, {-2, 2}, {-2, 2}},
+  ViewPoint->{0.7922811726588461, -3.2842050505971017`, 0.190493383304558},
+  ViewVertical->{0.4389524940509679, -0.4582539939747232, 
+   0.7728673786443889}]], "Output",
+ CellChangeTimes->{
+  3.941441697116515*^9, {3.941441730335137*^9, 3.941441749368238*^9}, {
+   3.941441787028707*^9, 3.941441801558593*^9}},
+ CellLabel->"Out[62]=",ExpressionUUID->"bccd8e5e-fa18-4a1e-bef2-4dedbd296375"]
 }, Open  ]]
 },
 WindowSize->{997, 911},
@@ -1701,6 +1957,20 @@ Cell[46302, 926, 13764, 254, 377, "Output",ExpressionUUID->"4afe4981-d7b3-4b76-b
 Cell[CellGroupData[{
 Cell[60103, 1185, 4797, 137, 262, "Input",ExpressionUUID->"529454d7-1785-47ad-a5c3-9f0170a0bf09"],
 Cell[64903, 1324, 19330, 344, 378, "Output",ExpressionUUID->"c92276e2-cd21-4a0a-a78e-086e2b899f94"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[84270, 1673, 1693, 41, 73, "Input",ExpressionUUID->"14a4494c-4203-47c5-8ac9-b23ac15a0a80"],
+Cell[85966, 1716, 1392, 26, 378, "Output",ExpressionUUID->"69fdecae-b17d-4ebf-a9df-fa297dd1c08d"]
+}, Open  ]],
+Cell[87373, 1745, 175, 3, 30, "Input",ExpressionUUID->"12ede2eb-f395-4fab-9cc4-5bc13b3b018b"],
+Cell[87551, 1750, 152, 3, 30, "Input",ExpressionUUID->"fb9931fc-4c14-499c-b1d8-3a8f32b31401"],
+Cell[CellGroupData[{
+Cell[87728, 1757, 1490, 40, 73, "Input",ExpressionUUID->"f49fd44c-ad52-4ee5-a81d-6dd067966888"],
+Cell[89221, 1799, 1773, 34, 335, "Output",ExpressionUUID->"cce24440-f613-496f-9dce-5e68c73efaca"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[91031, 1838, 1491, 40, 73, "Input",ExpressionUUID->"24c14dfe-2a73-420e-ae05-17be45a5b1ab"],
+Cell[92525, 1880, 2442, 44, 371, "Output",ExpressionUUID->"bccd8e5e-fa18-4a1e-bef2-4dedbd296375"]
 }, Open  ]]
 }
 ]

@@ -21,6 +21,10 @@ Supporting Theorems II & Separation Theorems
 
 Daniel Dietzler
 
+<figure class="absolute flex flex-col items-center right-16 bottom-14">
+  <img src="/qr-code.svg" class="w-40"/>
+  <figcaption><a href="https://t1p.de/pttm">https://t1p.de/pttm</a></figcaption>
+</figure>
 
 ---
 src: ./pages/intro.md
@@ -33,3 +37,12 @@ src: ./pages/separation_theorem.md
 ---
 src: ./pages/polytopes.md
 ---
+
+---
+layout: 
+---
+
+<figure class="flex flex-col items-center h-full justify-center">
+  <img src="/qr-code.svg" class="w-60"/>
+  <figcaption><a href="https://t1p.de/pttm">https://t1p.de/pttm</a></figcaption>
+</figure>

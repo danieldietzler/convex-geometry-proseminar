@@ -22,6 +22,26 @@ The $0$-support sets of a polytope $P \subset \mathbb{R}^n$ are precisely the se
 
 # k-Support Sets
 
+
+<div class="flex justify-evenly items-center h-full" >
+	<div class="flex flex-col items-center w-full" v-click>
+		<h4 class="-mb-8">2-Support Set</h4>
+		<img src="/2-support_set.svg" class="h-100 w-full" />
+	</div>
+	<div class="flex flex-col items-center w-full" v-click>
+		<h4 class="-mb-8">1-Support Set</h4>
+		<img src="/1-support_set.svg" class="h-100 w-full" />
+	</div>
+	<div class="flex flex-col items-center w-full" v-click>
+		<h4 class="-mb-8">0-Support Set</h4>
+		<img src="/0-support_set.svg" class="h-100 w-full" />
+	</div>
+</div>
+
+---
+
+# k-Support Sets
+
 Proof: "$\Rightarrow$"
 
 <div class="w-58% place-self-end -mt-24 -mr-6">
@@ -36,10 +56,26 @@ The $0$-support sets of a polytope $P \subset \mathbb{R}^n$ are precisely the se
 
 Let $\{x\}$ be a $0$-support set of $P$.
 
+<v-switch>
+
+<template #1>
+
+$\implies$ There is a supporting hyperplane $\{f = \beta\}$ such that $P \subset \{f \leq \beta\}$ and $P \cap \{f = \beta\} = \{x\}$.
+</template>
+<template #2>
+
 $\implies$ There is a supporting hyperplane $\{f = \beta\}$ such that $P \subset \{f \leq \beta\}$ and $P \cap \{f = \beta\} = \{x\}$. \
 This implies that $P \backslash \{x\} = P \cap \{f < \beta\}$ is convex, thus $x \in \text{vert} P$.
+</template>
+
+</v-switch>
 
 </div>
+
+<!--
+[click]
+[click] By definition: P\\{x} convex => x vert
+-->
 
 ---
 
@@ -61,21 +97,52 @@ Let $x \in \text{vert}P$ and $(\text{vert}P) \backslash \{x\}$ \
 $= \{x_1, ..., x_k\}, k \geq 1$ ($\text{vert}P = \{x\}$ trivial).
 $Q := \text{conv}\{x_1, ..., x_k\}$
 
-Since (?) $x \notin Q$.
-With Theorem 1.14 we once again get a hyperplane $E = \{f = \alpha\}$ supporting $Q$ and going through $p(Q, x)$.
-Furthermore, we obtain the supporting halfspace $\{f \leq \alpha\}$ and $\beta := f(x) > \alpha$.
+<v-switch>
 
-$$
+<template #1>
+
+Since $x \in \text{vert} P$, $x \notin Q$.
+</template>
+<template #2>
+
+Since $x \in \text{vert} P$, $x \notin Q$.
+With Theorem 1.14 we get a hyperplane $E = \{f = \alpha\}$ supporting $Q$ and going through $p(Q, x)$.
+</template>
+<template #3-6>
+
+Since $x \in \text{vert} P$, $x \notin Q$.
+With Theorem 1.14 we get a hyperplane $E = \{f = \alpha\}$ supporting $Q$ and going through $p(Q, x)$.
+Furthermore, we obtain the supporting halfspace $\{f \leq \alpha\}$ and $\beta := f(x) > \alpha$.
+</template>
+
+</v-switch>
+
+<v-click at="4">
+
+$$ 
 P \owns y = \sum_{i = 1}^k \alpha_i x_i + \alpha_{k + 1}x, \quad \alpha_i \geq 0, \quad \sum_{i = 1}^{k + 1} \alpha_i = 1
 $$
 
+</v-click>
+
+<v-click at="5">
 Then (using affine linear properties)
 
 $$
 f(y) = \sum_{i = 1}^k \alpha_i \underbrace{f(x_i)}_{\leq \alpha < \beta} + \alpha_{k + 1} f(x) \leq \beta
 $$
 
+</v-click>
+
 </div>
+
+<!--
+[click] By definition x can't be in the convex hull if x \in vert P
+[click] Already seen at the separation theorem
+[click]\
+[click] Let y \in P as follows \
+[click] f(x_i) < \beta, f(x) = \beta
+-->
 
 ---
 
@@ -97,13 +164,25 @@ $$
 f(y) = \sum_{i = 1}^k \alpha_i \underbrace{f(x_i)}_{\leq \alpha < \beta} + \alpha_{k + 1} f(x) \leq \beta
 $$
 
+<v-switch>
+
+<template #1>
+
+With $f(y) = \beta \iff \alpha_1 = ... = \alpha_k = 0, \alpha_{k + 1} = 1 \; (\iff y = x)$.
+</template>
+
+<template #2>
+
 With $f(y) = \beta \iff \alpha_1 = ... = \alpha_k = 0, \alpha_{k + 1} = 1 \; (\iff y = x)$.
 $\implies \{f \leq \beta\}$ is a supporting half space and $P \cap \{f = \beta \} = \{x\}$,
 concluding that $x$ is a $0$-support set of $P$.
+</template>
+
+</v-switch>
 
 </div>
 
-<div class="self-end mt-13 m-6">
+<div class="self-end mt-13 m-6" v-click="2">
 
 $\square$
 
@@ -136,11 +215,15 @@ Theorem 1.19 implies, in particular, that a support set of a polytope is a polyt
 
 </Remark>
 
+<!--
+So... F is convex
+-->
+
 ---
 
 # k-Support Sets
 
-Proof: "$\Leftarrow$"
+Proof 
 
 <div class="w-58% place-self-end -mt-24 -mr-6">
 <Theorem label="1.19">
@@ -158,18 +241,36 @@ $F = P \cap \{f = \alpha\}$ and $P \subset \{f \leq \alpha\}$. \
 $x_1, ..., x_m \in F$ for some $m \in \{1, ..., k\}$, \
 $x_{m + 1}, ..., x_k \notin F$ (w.l.o.g)
 
+<v-switch>
+
+<template #1>
+
+$x_{m + 1}, ..., x_k \in \{f < \alpha\}$, so $f(x_j) = \alpha - \delta_j, \delta_j > 0, j = m + 1, ..., k$.
+</template>
+<template #2-4>
+
 $x_{m + 1}, ..., x_k \in \{f < \alpha\}$, so $f(x_j) = \alpha - \delta_j, \delta_j > 0, j = m + 1, ..., k$. \
 Let $x \in P$ such that $x = \alpha_1 x_1 + ... + \alpha_k x_k, \alpha_j \geq 0$ and $\alpha_1 + ... + \alpha_k = 1$. Then,
+</template>
+
+</v-switch>
+
+<v-click at="2">
 
 $$
 f(x) = \alpha_1 f(x_1) + ... + \alpha_k f(x_k) = \alpha - \alpha_{m + 1} \delta_{m + 1} - ... - \alpha_k \delta_k.
 $$
 
+</v-click>
+
+<v-click at="3">
+
 In conclusion: $x \in F \iff \alpha_{m + 1} = ... = \alpha_k = 0$.
+</v-click>
 
 </div>
 
-<div class="self-end mt-8 m-6">
+<div class="self-end mt-8 m-6" v-click="3">
 
 $\square$
 

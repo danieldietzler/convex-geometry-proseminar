@@ -58,9 +58,16 @@ iff. $A$ and $B$ can be properly separated.
 </div>
 <div class="-mt-20">
 
-Suppose $\text{relint} A \cap \text{relint} B = \emptyset$. \
-Then, $\text{relint} A - \text{relint} B \not \owns 0$ follows. (\*) \
+
+Suppose $\text{relint} A \cap \text{relint} B = \emptyset$.
+<div v-click> 
+
+Then, $\text{relint} A - \text{relint} B \not \owns 0$ follows. (\*) 
+</div> 
+<div v-click>
+
 $\overset{\text{Ex 1.3.3 (a)}}{\implies} 0 \notin \text{relint}(A - B)$
+</div>
 
 </div>
 
@@ -74,7 +81,7 @@ Thus, clearly $0 \in P - Q \iff \exists p \in P, q \in Q: p = q$, so $P \cap Q \
 <!--
 Exercise 1.3.3 (a): relint(A + B) = relint A + relint B
 
-=> no identical points in the interior
+=> no identical points in the relative interior
 -->
 
 ---
@@ -99,19 +106,49 @@ iff. $A$ and $B$ can be properly separated.
 </div>
 <div class="-mt-20">
 
+<v-switch>
+
+<template #0>
+
 Prerequisite: $\text{cl}(A - B)$ is nonempty, closed \
 and convex.
+</template>
+
+<template #1>
+
+Prerequisite: $\text{cl}(A - B)$ is nonempty, $\underline{\text{closed}}$ \
+and convex.
+
+Obviously, the closure of a set is closed.
+</template>
+<template #2>
+
+Prerequisite: $\text{cl}(A - B)$ is $\underline{\text{nonempty}}$, closed \
+and convex.
+
+Obviously, the closure of a set is closed. \
+Furthermore, we know by definition that $A - B = \emptyset$ iff. $A$ or $B$ empty.
+</template>
+<template #3>
+
+Prerequisite: $\text{cl}(A - B)$ is nonempty, closed \
+and $\underline{\text{convex}}$.
 
 Obviously, the closure of a set is closed. \
 Furthermore, we know by definition that $A - B = \emptyset$ iff. $A$ or $B$ empty. \
 Lastly, the convexity of $A - B$ immediately follows from the convexity of $A$ and $B$ and with Corollary 1.2 we deduce that $\text{cl}(A - B)$ is convex.
+</template>
+
+</v-switch>
+
 
 </div>
 
 <!--
-Nonempty: A - B = {a - b: a in A, b in B} never empty when A and B have elements
+[click]
+[click] Nonempty: A - B = {a - b: a in A, b in B} never empty when A and B have elements
 
-Convexity A - B: Remark 1.4, just write it down
+[click] Convexity A - B: Remark 1.4, just write it down
 
 Corollary 1.2: A convex => relint, cl convex
 -->
@@ -184,14 +221,30 @@ We have:
 - $\text{cl}(A - B)$ nonempty, closed, convex
 - $E = \{f = 0\}$, $A - B \subset \{f \leq 0\}$
 
+<v-switch>
+
+<template #1>
+
+$f(a) \leq f(b) \forall a \in A, b \in B$.
+</template>
+<template #2>
+
+$f(a) \leq f(b) \forall a \in A, b \in B$.
+Let $\alpha := \underset{a \in A}{\sup} f(a) \leq f(b) < \infty$ for any $b \in B$, thus $A \subset \{f \leq \alpha\}$. 
+</template>
+<template #3>
+
 $f(a) \leq f(b) \forall a \in A, b \in B$.
 Let $\alpha := \underset{a \in A}{\sup} f(a) \leq f(b) < \infty$ for any $b \in B$, thus $A \subset \{f \leq \alpha\}$. \
 We conclude $f(b) \geq \alpha, b \in B \implies B \subset \{f \geq \alpha\}$.
+</template>
+
+</v-switch>
 
 </div>
 
 <!--
-f(a) \leq f(b), 'cause A - B \subset {f \leq 0}
+[click] f(a) \leq f(b), because A - B \subset {f \leq 0}
 -->
 
 ---
@@ -224,7 +277,7 @@ $A$ and $B$ can<v-click at=2>not</v-click> be properly separated $\implies$ \
 $\text{relint} A \cap \text{relint} B = \emptyset$
 </template>
 
-<template #1-3>
+<template #1-4>
 
 $A$ and $B$ can**not** be properly separated $\Longleftarrow$ \
 $\text{relint} A \cap \text{relint} B \neq \emptyset$
@@ -239,20 +292,20 @@ $\text{relint} A \cap \text{relint} B \neq \emptyset$
 Suppose $E$ is a separating hyperplane for \
 $A$ and $B$, $x_0 \in \text{relint}A \cap \text{relint} B$.
 
-Then, $x_0 \in E$, thus $A, B \subset E$. \
-Hence, $E$ does not properly separate $A$ and $B$.
-
 </div>
 
-<div v-click="2" class="self-end m-6 mt-6">
+<v-click at="3">
+
+Then, $x_0 \in E$, thus $A, B \subset E$. \
+Hence, $E$ does not properly separate $A$ and $B$.
+</v-click>
+
+<div v-click="3" class="self-end m-6 mt-6">
 
 $\square$
 
 </div>
 
-<!--
-f(a) \leq f(b), 'cause A - B \subset {f \leq 0}
--->
 
 ---
 
@@ -315,6 +368,8 @@ Then $A$ is convex.
 
 <!-- 
 1.19.i war eine Frage iirc
+
+1.19.i Gegenbeispiel: 2 Punkte, beide sind supporting points und A (bestehend aus den Punkten) ist abgeschlossen.
 -->
 
 ---
