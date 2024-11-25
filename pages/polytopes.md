@@ -329,26 +329,47 @@ Every polytope $P \subset \mathbb{R}^n$ is a polyhedral set.
 
 <div>
 
+<v-switch>
+
+<template #0>
+
 Let $E := \text{aff } P$.
-Then, $E = \bigcap_{j = 1}^r \tilde{H}_j$ with $r = 2(d - k)$, $\tilde{H}_i$ halfspaces in $\mathbb{R}^n$. \
+Then, $E = \bigcap_{j = 1}^r \tilde{H}_j$ with $r = 2(n - k)$, $\tilde{H}_i$ halfspaces in $\mathbb{R}^n$.
+</template>
+<template #1-4>
+
+Let $E := \text{aff } P$.
+Then, $E = \bigcap_{j = 1}^r \tilde{H}_j$ with $r = 2(n - k)$, $\tilde{H}_i$ halfspaces in $\mathbb{R}^n$. \
 Suppose $P$ is polyhedral in $E$:
+</template>
+
+</v-switch>
+
+<v-click at="1">
 
 $$
 P = \bigcap_{i = 1}^m H_i
 $$
-
 for $H_i \subset E$ $k$-dimensional halfspaces.
+</v-click>
 
+<v-click at="2">
 $$
 P = \bigcap_{i = 1}^m (H_i \oplus E^\perp) \cap E = \bigcap_{i = 1}^m (H_i \oplus E^\perp) \cap \bigcap_{j = 1}^r \tilde{H}_j
 $$
+</v-click>
+
+<v-click at="3">
 
 $\implies P$ is a polyhedral set in $\mathbb{R}^n$.
+</v-click>
 
 </div>
 
 <!--
-E^\perp := linear subspace orthogonal to the linear subspace which spans E
+[click] polyedrisch in E, also P = ... \
+[click] E^\perp := linear subspace orthogonal to the linear subspace which spans E
+[click] both finitely many halfspaces and then intersection
 -->
 
 ---
@@ -376,6 +397,31 @@ $$
 
 Now, we show that $P = P'$.
 
+<!--
+\draw[fill=blue!10,draw=blue] (0, 0) -- (1, 0) -- (2, 1) -- (2, 3) -- (1, 4) -- (0, 2) -- cycle;
+\path[fill=orange!40,opacity=.3] (2, -1) -- (2, 5) -- (-1, 5) -- (-1, -1) -- cycle;
+\path[fill=black!20,opacity=.4] (1.5, 5) -- (-1, 0) -- (3, -2) -- (5, 3) -- cycle;
+-->
+
+<div class="flex w-full justify-end items-center -mt-12">
+<v-switch>
+
+<template #1>
+<img src="/halfspaces-0.svg" class="h-60"/>
+</template>
+
+<template #2>
+<img src="/halfspaces-1.svg" class="h-60"/>
+</template>
+
+<template #3>
+
+<img src="/halfspaces-2.svg" class="h-60"/>
+</template>
+
+</v-switch>
+</div>
+
 </div>
 
 <!--
@@ -398,7 +444,96 @@ Every polytope $P \subset \mathbb{R}^n$ is a polyhedral set.
 </Theorem>
 </div>
 
-<div>
+<v-switch>
+
+<template #0>
+<div class="flex flex-col">
+
+Assume there ex. a $x \in P'\backslash P$.
+
+<img src="/polytope-polyhedral-1.svg" class="absolute self-center bottom-8"/>
+</div>
+</template>
+
+<template #1>
+<div class="flex flex-col">
+
+Assume there ex. a $x \in P'\backslash P$.
+For $y \in \text{int } P$
+
+<img src="/polytope-polyhedral-2.svg" class="absolute self-center bottom-8"/>
+</div>
+</template>
+
+<template #2>
+<div class="flex flex-col">
+
+Assume there ex. a $x \in P'\backslash P$.
+For $y \in \text{int } P$ we consider $[y, x]$
+
+<img src="/polytope-polyhedral-3.svg" class="absolute self-center bottom-8"/>
+</div>
+</template>
+
+<template #3>
+<div class="flex flex-col">
+
+Assume there ex. a $x \in P'\backslash P$.
+For $y \in \text{int } P$ we consider $[y, x] \cap P$.
+
+<img src="/polytope-polyhedral-4.svg" class="absolute self-center bottom-8"/>
+</div>
+</template>
+
+<template #4>
+<div class="flex flex-col">
+
+Assume there ex. a $x \in P'\backslash P$.
+For $y \in \text{int } P$ we consider $[y, x] \cap P$. \
+P is compact, convex, and $x \notin P$
+
+<img src="/polytope-polyhedral-4.svg" class="absolute self-center bottom-8"/>
+</div>
+</template>
+
+<template #5>
+<div class="flex flex-col">
+
+Assume there ex. a $x \in P'\backslash P$.
+For $y \in \text{int } P$ we consider $[y, x] \cap P$. \
+P is compact, convex, and $x \notin P$, thus ex. a $z \in (y, x)$ with $\{z\} = [y, x] \cap \text{bd } P$. 
+
+<img src="/polytope-polyhedral-5.svg" class="absolute self-center bottom-8"/>
+</div>
+</template>
+
+<template #6>
+<div class="flex flex-col">
+
+Assume there ex. a $x \in P'\backslash P$.
+For $y \in \text{int } P$ we consider $[y, x] \cap P$. \
+P is compact, convex, and $x \notin P$, thus ex. a $z \in (y, x)$ with $\{z\} = [y, x] \cap \text{bd } P$. \
+$\overset{\text{Support Thm.}}\implies$ supporting hyperplane of $P$ through $z$.
+
+<img src="/polytope-polyhedral-6.svg" class="absolute self-center bottom-8"/>
+</div>
+</template>
+
+<template #7>
+<div class="flex flex-col">
+
+Assume there ex. a $x \in P'\backslash P$.
+For $y \in \text{int } P$ we consider $[y, x] \cap P$. \
+P is compact, convex, and $x \notin P$, thus ex. a $z \in (y, x)$ with $\{z\} = [y, x] \cap \text{bd } P$. \
+$\overset{\text{Support Thm.}}\implies$ supporting hyperplane of $P$ through $z$.
+Thus, we conclude the existence of a support set $F_i$ of $P$ with $z \in F_i \subset \text{bd } H_i$.
+
+<img src="/polytope-polyhedral-6.svg" class="absolute self-center bottom-8"/>
+</div>
+</template>
+
+<template #8>
+<div class="flex flex-col">
 
 Assume there ex. a $x \in P'\backslash P$.
 For $y \in \text{int } P$ we consider $[y, x] \cap P$. \
@@ -407,16 +542,27 @@ $\overset{\text{Support Thm.}}\implies$ supporting hyperplane of $P$ through $z$
 Thus, we conclude the existence of a support set $F_i$ of $P$ with $z \in F_i \subset \text{bd } H_i$. \
 Also, $y \in \text{int } H_i, x \in P' \subset H_i$ and $z \in (y, x)$ imply that we have a $z \in \text{int } H_i$. Contradiction.
 
+<img src="/polytope-polyhedral-6.svg" class="absolute self-center bottom-8"/>
 </div>
+</template>
 
-<div class="self-end mt-18 m-6">
+</v-switch>
+
+<!--
+\draw[fill=blue!10,draw=blue] (0, 0) -- (1, 0) -- (2, 1) -- (2, 3) -- (1, 4) -- (0, 2) -- cycle;
+\filldraw[black] (3, 3) circle (1.5pt) node[below=.2cm] {x};
+\filldraw[black] (1, 2) circle (1.5pt) node[below=.2cm] {y};
+\draw[black,dotted,thick] (1, 2) -- (3, 3);
+\draw[black,thick] (1, 2) -- (2, 2.5);
+\filldraw[black] (2, 2.5) circle (1.5pt) node[below right=.05cm] {z};
+\draw[gray] (2, -0.5) -- (2, 4.5);
+-->
+
+<div class="self-end mt-18 m-6" v-click="8">
 
 $\square$
 
 </div>
 
 <!--
-bd == boundary; Rand
-
-\subset weil P \subset H_i
 -->
