@@ -238,6 +238,14 @@ $f(a) \leq f(b) \forall a \in A, b \in B$.
 Let $\alpha := \underset{a \in A}{\sup} f(a) \leq f(b) < \infty$ for any $b \in B$, thus $A \subset \{f \leq \alpha\}$. \
 We conclude $f(b) \geq \alpha, b \in B \implies B \subset \{f \geq \alpha\}$.
 </template>
+<template #4>
+
+$f(a) \leq f(b) \forall a \in A, b \in B$.
+Let $\alpha := \underset{a \in A}{\sup} f(a) \leq f(b) < \infty$ for any $b \in B$, thus $A \subset \{f \leq \alpha\}$. \
+We conclude $f(b) \geq \alpha, b \in B \implies B \subset \{f \geq \alpha\}$. \
+Applying this argument in $C := \text{aff} (A \cup B)$ and extending the hyperplane to a hyperplane in $\mathbb{R}^n$ \
+(with respect to $C$) by adding $C^\perp$ yields the properly separating hyperplane.
+</template>
 
 </v-switch>
 
@@ -245,6 +253,8 @@ We conclude $f(b) \geq \alpha, b \in B \implies B \subset \{f \geq \alpha\}$.
 
 <!--
 [click] f(a) \leq f(b), because A - B \subset {f \leq 0}
+[click][click]
+[click] Make sure NOT A, B \subset {f = \alpha}
 -->
 
 ---
