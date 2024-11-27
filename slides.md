@@ -23,7 +23,7 @@ Daniel Dietzler
 
 <figure class="absolute flex flex-col items-center right-16 bottom-14">
   <img src="/qr-code.svg" class="w-40"/>
-  <figcaption><a href="https://t1p.de/pttm">https://t1p.de/pttm</a></figcaption>
+  <figcaption><a href="https://t1p.de/cg-6">https://t1p.de/cg-6</a></figcaption>
 </figure>
 
 ---
@@ -44,5 +44,5 @@ layout:
 
 <figure class="flex flex-col items-center h-full justify-center">
   <img src="/qr-code.svg" class="w-60"/>
-  <figcaption><a href="https://t1p.de/pttm">https://t1p.de/pttm</a></figcaption>
+  <figcaption><a href="https://t1p.de/cg-6">https://t1p.de/cg-6</a></figcaption>
 </figure>
